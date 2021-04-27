@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  ubuntu:
+    build:
+        context: .
+    image: modified_ubuntu:20.04
+    ports: 
+      - "8080:8888"
+    
