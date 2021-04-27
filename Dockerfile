@@ -4,8 +4,8 @@ FROM ubuntu:20.04
 RUN apt-get update && apt-get install -y curl
 
 #	Install miniconda to /miniconda
-RUN curl -LO http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
-RUN bash Miniconda-latest-Linux-x86_64.sh -p /miniconda -b
+RUN curl -LO http://repo.continuum.io/miniconda/Miniconda3-py39_4.9.2-Linux-x86_64.sh
+RUN bash Miniconda3-py39_4.9.2-Linux-x86_64.sh -p /miniconda -b
 RUN rm Miniconda3-py39_4.9.2-Linux-x86_64.sh
 ENV PATH=/miniconda/bin:${PATH}
 RUN conda update -y conda
