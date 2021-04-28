@@ -32,4 +32,4 @@ RUN python -m ipykernel install --user --name=docker_ex_env	#TO-DO - check if th
 #	setting an entrypoint
 ENTRYPOINT ["jupyter", "notebook", "--ip=*"]
 
-EXPOSE 8080
+EXPOSE 8888

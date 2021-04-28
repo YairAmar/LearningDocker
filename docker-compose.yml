@@ -4,7 +4,7 @@ services:
   ubuntu:
     build:
         context: .
-    image: modified_ubuntu:20.04
+    image: jupyter_im
     ports: 
-      - "8080:8080"
+      - "8888:8888"
     
